@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="/src/modal-functions.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Modal</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>Modal Test</h1>
+      <dialog id="home-modal"> 
+        <h2>This is a custom modal</h2>
+        <button onclick="closeModal()">CLOSE</button>
+      </dialog>
+
+      <dialog id="home-non-modal"> 
+        <h2>This is a custom modal</h2>
+        <button onclick="closeModal()">CLOSE</button>
+      </dialog>
+      <button onclick="openModal()">OPEN MODAL</button>
+      <button onclick="openNonModal()">OPEN NON MODAL</button>
+    </div>
+  </body>
+</html>

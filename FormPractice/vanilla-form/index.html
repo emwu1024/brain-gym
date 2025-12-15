@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="/src/btnFunctionality.ts"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Form Practice</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>Ultimate Fictional Character Showdown: </h1>
+      <form action="/" class="form-container">
+        <!-- <form class="form-container"></form> -->
+        <div class="form-item">
+          <label for="name">* Character Name</label>
+          <input id="name" type="text" required></input>
+        </div>
+
+        <div class="form-item">
+          <label for="series">* Series Name</label>
+          <input id="series" type="text" required></input>
+        </div>
+
+        <div class="form-item">
+          <label for="summary">Character Summary</label>
+          <textarea name="summary" id="summary" rows="10"></textarea>
+        </div>
+
+        <div class="form-item">
+          <label for="date">Character's Favourite Colour</label>
+          <input id="" type="color"></input>
+        </div>
+
+        <div class="form-item">
+          <label for="date">Submission Date Time</label>
+          <input id="date" type="date"></input>
+        </div>
+
+        <!-- <button type="button" onclick="handleClick()" id="submit-btn">Let's Go!</button> -->
+         <button id="submit-btn">Let's Go!</button>
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

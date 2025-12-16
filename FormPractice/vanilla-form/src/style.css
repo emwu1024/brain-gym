@@ -1,25 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Sixtyfour+Convergence&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bytesized&display=swap");
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  --black-purple: #201127;
+  --purple: #201433;
+  --black-blue: #1b1e34;
+  --blue: #355d68;
+  --teal: #6aaf9d;
+  --light-teal: #94c5ac;
+  --yellow: #ffeb99;
+  --orange: #ec9a6d;
+  --white-pink: #ffc27a;
+  --light-pink: #d9626b;
+  --pink: #c24b6e;
+  --dark-pink: #a73169;
+
+  color: var(--teal);
+  background-color: var(--black-blue);
+
+  /* Cool but too scary... */
+  /* font-family: "Rubik Glitch", system-ui;
   font-weight: 400;
+  font-style: normal; */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
 }
 
 body {
@@ -40,27 +48,6 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 button {
@@ -93,7 +80,16 @@ button:focus-visible {
 
 input,
 textarea {
-  border-radius: 15px;
+  border-radius: 25px;
+  border: solid var(--light-pink);
+  background-color: var(--blue);
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  color: var(--black-purple);
 }
 
 .page-container {
